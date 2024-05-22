@@ -4,16 +4,24 @@
 -- Maintainer:   bbenzikry
 -- Website:      https://github.com/bbenzikry/snazzybuddy.nvim
 -- License:      MIT
-local Color, colors, Group, groups, styles = require('colorbuddy').setup()
-local g = require('colorbuddy.group').groups
-local c = require('colorbuddy.color').colors
-local s = require('colorbuddy.style').styles
-local b = s.bold
-local i = s.italic
-local uc = s.undercurl
-local ul = s.underline
-local r = s.reverse
-local no = s.NONE
+local colorbuddy = require('colorbuddy')
+colorbuddy.setup()
+
+local Color = colorbuddy.Color
+local colors = colorbuddy.colors
+local Group = colorbuddy.Group
+local groups = colorbuddy.groups
+local styles = colorbuddy.styles
+
+local g = groups;
+local c = colors;
+local s = styles;
+local b = styles.bold
+local i = styles.italic
+local uc = styles.undercurl
+local ul = styles.underline
+local r = styles.reverse
+local no = styles.NONE
 -- local o = vim.o
 -- local v = vim.g
 
